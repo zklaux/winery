@@ -187,11 +187,11 @@ section {
         margin: 0;
         background: linear-gradient(
           to bottom, 
-          aliceblue, aliceblue 20%, 
+          white, white 20%, 
           transparent 20%, transparent 40%, 
-          aliceblue 40%, aliceblue 60%, 
+          white 40%, white 60%, 
           transparent 60%, transparent 80%, 
-          aliceblue 80%, aliceblue 100%
+          white 80%, white 100%
         );
     }
 
@@ -316,7 +316,7 @@ section {
     }
 
     .media-add {
-        width: 50%;
+        width: 180px;
     }
 
     @media screen {
