@@ -25,6 +25,11 @@ body {
     color: aliceblue;
 }
 
+#hamburger-input,
+#sidebar-menu{
+    display: none;
+}
+
 .top-link {
     color: aliceblue;
     text-decoration: none;
@@ -156,4 +161,168 @@ section {
 .media-add a {
     color: #fff;
     text-decoration: none;
+}
+
+@media (max-width: 880px) {
+    
+    .header {
+        margin: 1.3em 0.5em;
+    }
+    
+    .brand {
+        margin-left: 0.2em;
+    }
+
+    /* MENU HAMBURGER! */
+
+    #hamburger-menu {
+        position: fixed;
+        top: 10px;
+        left: 86vw;
+        width: 40px;
+        height: 40px;
+        display: block;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(
+          to bottom, 
+          aliceblue, aliceblue 20%, 
+          transparent 20%, transparent 40%, 
+          aliceblue 40%, aliceblue 60%, 
+          transparent 60%, transparent 80%, 
+          aliceblue 80%, aliceblue 100%
+        );
+    }
+
+    #hamburger-menu #sidebar-menu {
+        visibility: hidden;
+        position: fixed;
+        top: 5em;
+        right: -100vw;
+        width: 100vw;
+        height: 100%;
+        background-color: #272725;
+        padding: 2em 10px;
+        box-sizing: border-box;
+    }
+
+    #sidebar-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+        visibility: visible;
+        right: 0;
+    }
+
+    #hamburger-input:checked ~ .overlay{
+        visibility: visible;
+        opacity: 0.4;
+    }
+
+    #hamburger-menu a {
+        color: #B9FAF8;
+        font-size: 2.5rem;
+        text-decoration: none;
+    }
+
+    #hamburger-menu a:hover {
+        text-decoration: underline;
+    }
+
+    /* FIM DO MENU HAMBURGUER */
+
+    .menu {
+        visibility: hidden;
+    }
+    
+    
+    section {
+        margin: 2em 0;
+    }
+    
+    .main-img {
+        width: 100vw;
+    }
+    
+    .main {
+        width: 100vw;
+        align-content: center;
+    }
+    
+    .call {
+        white-space: pre-wrap;
+        color: aliceblue;
+        font-weight: 800;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    .about,
+    .perks {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        /* margin: 32px 0; */
+    }
+    
+    .sub-img {
+        width: 100vw;
+        max-height: 80vh;
+    }
+    
+    .side-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 0 8px;
+        gap: 1.5em;
+    }
+    
+    .perks img {
+        order: -1;
+    }
+
+    .sec-title {
+        font-size: 1.5em;
+    }
+    
+    .wn-txt {
+        font-size: 1.125em;
+        width: 70vw;
+    }
+    
+
+    .customers {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .review {
+        padding: 5%;
+    }
+
+    .social {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4em;
+    }
+
+    .media-add {
+        width: 50%;
+    }
+
+    @media screen {
+
+        #hamburger-menu {
+            display: inline;
+        }
+    }
 }
