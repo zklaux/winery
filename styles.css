@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #272725;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 128px;   
+}
+
+.brand {
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.top-link {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.action-btn {
+    transition: 0.5s;
+    padding: 0.8em 1.5em;
+    background-color: #676568;
+    text-decoration: none;
+    color: #fff;
+}
+
+.action-btn:hover {
+    background-color: #590c13;
+}
+
+section {
+    margin: 72px 128px;
+}
+
+.main-img {
+    width: 82vw;
+}
+
+.main {
+    width: 90vw;
+    align-content: center;
+}
+
+.call {
+    white-space: pre-wrap;
+    color: aliceblue;
+    font-weight: 800;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.about,
+.perks {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    /* margin: 32px 0; */
+}
+
+.sub-img {
+    width: 40vw;
+    max-height: 80vh;
+}
+
+.side-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 8px;
+    gap: 48px;
+}
+
+.sec-title {
+    color: aliceblue;
+    font-size: 48px;
+}
+
+.wn-txt {
+    color: aliceblue;
+    font-size: 36px;
+    width: 40vw;
+}
+
+.section-btn {
+    width: 160px;
+}
+
+.divider {
+    border-top: 3px solid #fff;
+    width: 40%;
+    margin: auto;
+}
+
+.customers {
+    display: flex;
+    gap: 54px;
+}
+
+.review {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cust-name {
+    font-size: 36px;
+}
+
+.cust-review {
+    font-size: 24px;
+}
+
+.cust-review::before,
+.cust-review::after {
+    content: '"';
+    font-size: 36px;
+}
+
+.cust-review::first-letter {
+    font-weight: 700;
+}
+
+.social {
+    background: #676568;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px 128px;  
+}
+
+.media-add {
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+
+}
+
+.media-add a {
+    color: #fff;
+    text-decoration: none;
+}
